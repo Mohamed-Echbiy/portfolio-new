@@ -2,11 +2,23 @@ import Image from "next/image";
 import React from "react";
 import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai";
 import { TfiGithub } from "react-icons/tfi";
-import { TbBrandNextjs } from "react-icons/tb";
-import { FaNodeJs } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { TbBrandNextjs, TbBrandSvelte } from "react-icons/tb";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+  SiFirebase,
+  SiShopify,
+  SiSvelte,
+} from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+
+import { Autoplay, EffectFade } from "swiper";
 
 function Card() {
   return (
@@ -33,21 +45,79 @@ function Card() {
             stack developer specializing in front-end development.
           </p>
         </div>
-        <div className='tech-stack text-accent flex items-center gap-5 '>
-          <p className=' text-primary text-lg capitalize'>tech stack: </p>
-          <p title='Next.js'>
-            <TbBrandNextjs className='w-8 h-8' />
+        <div className='flex items-center gap-4'>
+          <p className=' text-primary text-lg capitalize min-w-fit'>
+            SKILLS :{" "}
           </p>
-          <p>
-            <FaNodeJs className='w-8 h-8' title='Node.js' />
-          </p>
-          <p>
-            <SiTypescript className='w-8 h-8' title='Typescript' />
-          </p>
-          <p className='' title='MongoDb'>
-            <DiMongodb className='w-8 h-8' />
-          </p>
-          ...
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            modules={[Autoplay, EffectFade]}
+            grabCursor={true}
+            effect='fade'
+            autoplay={{
+              delay: 5000,
+            }}
+            speed={500}
+            loop={true}
+            className='flex-grow'
+          >
+            <SwiperSlide>
+              <div className='tech-stack text-accent flex items-center gap-5 justify-center bg-primary'>
+                <p title='Next.js'>
+                  <TbBrandNextjs className='w-8 h-8' />
+                </p>
+                <p>
+                  <FaNodeJs className='w-8 h-8' title='Node.js' />
+                </p>
+                <p>
+                  <SiTypescript className='w-8 h-8' title='Typescript' />
+                </p>
+                <p className='' title='MongoDb'>
+                  <DiMongodb className='w-8 h-8' />
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='tech-stack text-accent flex items-center gap-5 justify-center bg-primary'>
+                <p title='React.js'>
+                  <FaReact className='w-8 h-8' />
+                </p>
+                <p>
+                  <SiExpress className='w-8 h-8' title='Express.js' />
+                </p>
+                <p>
+                  <SiTailwindcss className='w-8 h-8' title='tailwindcss' />
+                </p>
+                <p className='' title='Firebase'>
+                  <SiFirebase className='w-8 h-8' />
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='tech-stack text-accent flex items-center gap-5 justify-center bg-primary'>
+                <p title='Shopify liquid'>
+                  <SiShopify className='w-8 h-8' />
+                </p>
+                <p>
+                  <Image
+                    src='/sanity.svg'
+                    alt='sanity logo'
+                    width={32}
+                    height={32}
+                    title='sanity headless cms'
+                    className='object-contain bg-blend-color-burn'
+                  />
+                </p>
+                <p>
+                  <TbBrandSvelte className='w-8 h-8' title='svelet-kit' />
+                </p>
+                <p className='' title='svelet'>
+                  <SiSvelte className='w-8 h-8' />
+                </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
       <div className='social flex items-center w-full justify-center gap-4'>

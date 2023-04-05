@@ -2,8 +2,18 @@ import Container from "@/components/Container";
 import Hero from "@/components/hero-section/Hero";
 import Head from "next/head";
 import Image from "next/image";
+import { createContext, Dispatch, SetStateAction, useState } from "react";
+
+export const context = createContext<
+  | {
+      whatProject: number;
+      setProject: Dispatch<SetStateAction<number>>;
+    }
+  | any
+>(0);
 
 export default function Home() {
+  const [whatProject, setProject] = useState(1);
   return (
     <>
       <Head>
@@ -12,9 +22,16 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className=' max-w-9xl w-full min-h-screen bg-primary'>
-        <Container />
-      </main>
+      <context.Provider
+        value={{
+          whatProject,
+          setProject,
+        }}
+      >
+        <main className=' max-w-9xl w-full min-h-screen bg-primary'>
+          <Container />
+        </main>
+      </context.Provider>
     </>
   );
 }

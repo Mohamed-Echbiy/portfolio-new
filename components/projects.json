@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Zorin Os",
+    "description": "I created a static website that replicates the official Zorin OS website, using Next.js and Tailwind CSS. The website includes four pages: the home page, pro version page, for school page, and download page. Next.js allowed me to easily build static web pages that are fast and optimized for performance. Tailwind CSS provided a set of pre-defined classes that allowed me to style the website quickly and easily without writing custom CSS code for every element. By building this website, I gained experience in using Next.js and Tailwind CSS to create modern, functional, and visually appealing static websites. I also learned how to replicate an existing website, which is a valuable skill in web development.",
+    "techStack": ["Tailwind CSS", "Next.js"],
+    "photoDesktop": "/zorinOs_desktop.png",
+    "photoMobile": "/zorinOs_mobile.png",
+    "photoTablet": "/zorinOs_tablet.png",
+    "linkGithub": "https://github.com/Mohamed-Echbiy/ZorinOs_Website_Clone",
+    "linkProject": "https://zorin-clone.netlify.app"
+  },
+  {
+    "title": "animotime",
+    "description": "I created an anime streaming website that allows users to watch their favorite anime shows, leave comments, and save their favorite titles for later. The website was built using Next.js, TypeScript, Node.js, and Express, with MongoDB as the database and Firebase authentication for user management. To provide up-to-date anime information, I integrated three APIs. Additionally, I used Tailwind CSS to create a modern and intuitive user interface. To handle the anime download links and blog posts, I used Sanity.io as my headless CMS. This project showcases my skills in web development and my ability to work with multiple technologies to deliver a high-quality product.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase",
+      "Tailwind CSS",
+      "sanity cms"
+    ],
+    "photoDesktop": "/animotme_desktop.jpg",
+    "photoMobile": "/animotime_mobile.jpg",
+    "linkGithub": "https://github.com/Mohamed-Echbiy/animo-timev3",
+    "linkProject": "https://animotime.site"
+  }
+]

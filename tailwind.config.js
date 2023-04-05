@@ -15,13 +15,13 @@ module.exports = {
         "9xl": "1800px",
       },
       colors: {
-        primary: "#A9A9A1",
+        primary: "#F7F7F7",
         secondary: "#121212",
-        accent: "#82B74B",
+        accent: "#7851A9",
         link: "#B8E3DE",
       },
       backgroundColor: {
-        primary: "#0A192F",
+        primary: "#121212",
         secondary: "#F7F7F7",
         "btn-primary": "#008080",
       },
