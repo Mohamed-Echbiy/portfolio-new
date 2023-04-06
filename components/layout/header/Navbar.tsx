@@ -1,9 +1,11 @@
+import { context } from "@/pages";
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { AiFillPhone } from "react-icons/ai";
 import { FaSlackHash } from "react-icons/fa";
 
 function Navbar() {
+  const { whatProject } = useContext(context);
   return (
     <nav className='flex-grow '>
       <ul className='flex items-center justify-end gap-4 w-full'>

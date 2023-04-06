@@ -8,3 +8,12 @@ body {
 .section {
   min-height: calc(100vh - 68px);
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7851a9;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-weight: bold;
+}
