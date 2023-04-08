@@ -22,7 +22,7 @@ import { Autoplay, EffectFade } from "swiper";
 
 function Card() {
   return (
-    <div className='card min-w-[320px] flex-grow max-w-[420px] aspect-[.7] p-5 shadow-xl'>
+    <div className='card min-w-[320px] mt-4 mb-12 xl:mx-0 lg:mb-0 flex-grow max-w-[420px] aspect-[.7] p-5 shadow-xl mx-auto'>
       <figure className='relative aspect-square mb-12 p-5 w-3/4 mx-auto self-center'>
         <Image
           src='/me.jpeg'
@@ -96,9 +96,9 @@ function Card() {
             </SwiperSlide>
             <SwiperSlide>
               <div className='tech-stack text-accent flex items-center gap-5 justify-center bg-primary'>
-                <p title='Shopify liquid'>
+                {/* <p title='Shopify liquid'>
                   <SiShopify className='w-8 h-8' />
-                </p>
+                </p> */}
                 <p>
                   <Image
                     src='/sanity.svg'

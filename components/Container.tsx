@@ -7,7 +7,7 @@ function Container() {
   const { whatProject } = useContext(context);
   console.log(whatProject);
   return (
-    <section className='section flex items-center gap-4'>
+    <section className='section flex w-full items-center gap-4 flex-wrap xl:flex-nowrap'>
       <Card />
       {whatProject === 1 ? <Projects id={1} /> : whatProject === 2 ? "" : ""}
     </section>

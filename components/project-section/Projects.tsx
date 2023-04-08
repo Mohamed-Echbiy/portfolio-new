@@ -13,7 +13,7 @@ import Link from "next/link";
 function Projects({ id }: { id: number }) {
   console.log(project);
   return (
-    <section className='min-w-[420px] flex-grow px-6'>
+    <section className='min-w-[420px] flex-grow px-6 box-content]'>
       <div className=' images'>
         <Swiper
           slidesPerView={1}
