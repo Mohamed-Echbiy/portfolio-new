@@ -1,5 +1,7 @@
 import Container from "@/components/Container";
-import Hero from "@/components/hero-section/Hero";
+import Footer from "@/components/layout/footer/Footer";
+import Header from "@/components/layout/header/Header";
+// import Hero from "@/components/hero-section/Hero";
 import Head from "next/head";
 import Image from "next/image";
 import { createContext, Dispatch, SetStateAction, useState } from "react";
@@ -29,7 +31,9 @@ export default function Home() {
         }}
       >
         <main className=' max-w-9xl w-full min-h-screen bg-primary'>
+          <Header />
           <Container />
+          <Footer />
         </main>
       </context.Provider>
     </>

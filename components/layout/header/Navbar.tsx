@@ -5,7 +5,7 @@ import { AiFillPhone } from "react-icons/ai";
 import { FaSlackHash } from "react-icons/fa";
 
 function Navbar() {
-  const { whatProject } = useContext(context);
+  const { whatProject, setProject } = useContext(context);
   return (
     <nav className='flex-grow '>
       <ul className='flex items-center justify-end gap-4 w-full'>
@@ -39,8 +39,9 @@ function Navbar() {
         <li className='contact-me flex items-center gap-2 w-fit group'>
           <AiFillPhone className=' rotate-90 w-5 h-5 group-hover:text-accent ease-in-out duration-300 transition-colors' />
           <Link
-            className='group-hover:text-accent ease-in-out duration-300 transition-colors'
+            className='group-hover:text-accent ease-in-out duration-300 transition-colors cursor-pointer'
             href='#Contact-me'
+            onClick={() => setProject(2)}
           >
             Contact Me
           </Link>
